@@ -2,4 +2,5 @@
 https://iust-deep-learning.github.io/972/
 
 config file for training: recognition/config.py
-the default config MobileNet
+
+the default config is for MobileNet
