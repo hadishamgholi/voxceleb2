@@ -1,1 +1,14 @@
+# Distribution / packaging
+voxcelab/
+frames/
+framess/
 vox/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# files
+test.py
+frame_to_lap.csv
+*.csv
+*.zip
