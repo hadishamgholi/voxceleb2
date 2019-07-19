@@ -1,0 +1,1162 @@
+INFO:root:loading recordio ../datasets/faces_CASIA_112x112/faces_webface_112x112/train.rec...
+/usr/local/lib/python2.7/dist-packages/mxnet/module/base_module.py:505: UserWarning: Optimizer created manually outside Module but rescale_grad is not normalized to 1.0/batch_size/num_workers (1.0 vs. 0.00625). Is this intended?
+  optimizer_params=optimizer_params)
+gpu num: 2
+prefix ./models/m1-softmax-casia/model
+image_size [112, 112]
+num_classes 10572
+Called with argument: Namespace(batch_size=160, ckpt=0, ctx_num=2, dataset='casia', frequent=100, image_channel=3, kvstore='device', loss='softmax', lr=0.001, lr_steps='10000,20000,30000', models_root='./models', mom=0.9, network='m1', per_batch_size=80, pretrained='', pretrained_epoch=0, rescale_threshold=0, verbose=1000, wd=0.0005) {'net_act': 'prelu', 'emb_size': 256, 'data_rand_mirror': True, 'loss_name': 'softmax', 'val_targets': ['calfw', 'cfp_fp', 'agedb_30', 'cfp_ff', 'cplfw', 'lfw'], 'ce_loss': True, 'net_input': 1, 'image_shape': [112, 112, 3], 'net_blocks': [1, 4, 6, 2], 'fc7_lr_mult': 1.0, 'ckpt_embedding': False, 'net_unit': 3, 'net_output': 'GDC', 'count_flops': True, 'num_workers': 64, 'batch_size': 160, 'memonger': False, 'data_images_filter': 0, 'dataset': 'casia', 'num_classes': 10572, 'fc7_no_bias': False, 'loss': 'softmax', 'data_color': 0, 'dataset_path': '../datasets/faces_CASIA_112x112/faces_webface_112x112', 'data_cutoff': False, 'net_se': 0, 'net_multiplier': 1.0, 'fc7_wd_mult': 1.0, 'network': 'm1', 'per_batch_size': 80, 'net_name': 'fmobilenet', 'workspace': 256, 'max_steps': 0, 'bn_mom': 0.9}
+Network FLOPs: 1.1G
+header0 label [490624. 501196.]
+id2range 10572
+490623
+rand_mirror True
+loading bin 0
+loading bin 1000
+loading bin 2000
+loading bin 3000
+loading bin 4000
+loading bin 5000
+loading bin 6000
+loading bin 7000
+loading bin 8000
+loading bin 9000
+loading bin 10000
+loading bin 11000
+(12000L, 3L, 112L, 112L)
+ver calfw
+loading bin 0
+loading bin 1000
+loading bin 2000
+loading bin 3000
+loading bin 4000
+loading bin 5000
+loading bin 6000
+loading bin 7000
+loading bin 8000
+loading bin 9000
+loading bin 10000
+loading bin 11000
+loading bin 12000
+loading bin 13000
+(14000L, 3L, 112L, 112L)
+ver cfp_fp
+loading bin 0
+loading bin 1000
+loading bin 2000
+loading bin 3000
+loading bin 4000
+loading bin 5000
+loading bin 6000
+loading bin 7000
+loading bin 8000
+loading bin 9000
+loading bin 10000
+loading bin 11000
+(12000L, 3L, 112L, 112L)
+ver agedb_30
+loading bin 0
+loading bin 1000
+loading bin 2000
+loading bin 3000
+loading bin 4000
+loading bin 5000
+loading bin 6000
+loading bin 7000
+loading bin 8000
+loading bin 9000
+loading bin 10000
+loading bin 11000
+loading bin 12000
+loading bin 13000
+(14000L, 3L, 112L, 112L)
+ver cfp_ff
+loading bin 0
+loading bin 1000
+loading bin 2000
+loading bin 3000
+loading bin 4000
+loading bin 5000
+loading bin 6000
+loading bin 7000
+loading bin 8000
+loading bin 9000
+loading bin 10000
+loading bin 11000
+(12000L, 3L, 112L, 112L)
+ver cplfw
+loading bin 0
+loading bin 1000
+loading bin 2000
+loading bin 3000
+loading bin 4000
+loading bin 5000
+loading bin 6000
+loading bin 7000
+loading bin 8000
+loading bin 9000
+loading bin 10000
+loading bin 11000
+(12000L, 3L, 112L, 112L)
+ver lfw
+lr_steps [10000, 20000, 30000]
+call reset()
+[08:56:38] src/operator/nn/./cudnn/./cudnn_algoreg-inl.h:97: Running performance tests to find the best convolution algorithm, this can take a while... (setting env variable MXNET_CUDNN_AUTOTUNE_DEFAULT to 0 to disable)
+INFO:root:Epoch[0] Batch [0-100]	Speed: 517.90 samples/sec	acc=0.003342	lossvalue=9.055125
+INFO:root:Epoch[0] Batch [100-200]	Speed: 516.98 samples/sec	acc=0.011687	lossvalue=8.439917
+INFO:root:Epoch[0] Batch [200-300]	Speed: 516.06 samples/sec	acc=0.024000	lossvalue=8.000464
+INFO:root:Epoch[0] Batch [300-400]	Speed: 515.25 samples/sec	acc=0.035812	lossvalue=7.699399
+INFO:root:Epoch[0] Batch [400-500]	Speed: 516.42 samples/sec	acc=0.050937	lossvalue=7.446200
+INFO:root:Epoch[0] Batch [500-600]	Speed: 515.80 samples/sec	acc=0.064687	lossvalue=7.187182
+INFO:root:Epoch[0] Batch [600-700]	Speed: 514.77 samples/sec	acc=0.080812	lossvalue=6.985370
+INFO:root:Epoch[0] Batch [700-800]	Speed: 514.44 samples/sec	acc=0.098250	lossvalue=6.773588
+INFO:root:Epoch[0] Batch [800-900]	Speed: 516.44 samples/sec	acc=0.114250	lossvalue=6.618495
+INFO:root:Epoch[0] Batch [900-1000]	Speed: 140.41 samples/sec	acc=0.128562	lossvalue=6.413593
+INFO:root:Epoch[0] Batch [1000-1100]	Speed: 513.43 samples/sec	acc=0.146187	lossvalue=6.235776
+INFO:root:Epoch[0] Batch [1100-1200]	Speed: 510.58 samples/sec	acc=0.167313	lossvalue=6.061002
+INFO:root:Epoch[0] Batch [1200-1300]	Speed: 509.90 samples/sec	acc=0.182812	lossvalue=5.890757
+INFO:root:Epoch[0] Batch [1300-1400]	Speed: 508.07 samples/sec	acc=0.201375	lossvalue=5.757286
+INFO:root:Epoch[0] Batch [1400-1500]	Speed: 509.60 samples/sec	acc=0.216188	lossvalue=5.588190
+INFO:root:Epoch[0] Batch [1500-1600]	Speed: 508.70 samples/sec	acc=0.233937	lossvalue=5.476112
+INFO:root:Epoch[0] Batch [1600-1700]	Speed: 509.32 samples/sec	acc=0.248812	lossvalue=5.321767
+INFO:root:Epoch[0] Batch [1700-1800]	Speed: 508.92 samples/sec	acc=0.259937	lossvalue=5.202323
+INFO:root:Epoch[0] Batch [1800-1900]	Speed: 508.81 samples/sec	acc=0.281187	lossvalue=5.052675
+INFO:root:Epoch[0] Batch [1900-2000]	Speed: 139.03 samples/sec	acc=0.290438	lossvalue=4.958722
+INFO:root:Epoch[0] Batch [2000-2100]	Speed: 511.24 samples/sec	acc=0.306875	lossvalue=4.822941
+INFO:root:Epoch[0] Batch [2100-2200]	Speed: 508.96 samples/sec	acc=0.322688	lossvalue=4.695916
+INFO:root:Epoch[0] Batch [2200-2300]	Speed: 508.28 samples/sec	acc=0.339375	lossvalue=4.583444
+INFO:root:Epoch[0] Batch [2300-2400]	Speed: 508.65 samples/sec	acc=0.356687	lossvalue=4.433963
+INFO:root:Epoch[0] Batch [2400-2500]	Speed: 506.46 samples/sec	acc=0.363312	lossvalue=4.408012
+INFO:root:Epoch[0] Batch [2500-2600]	Speed: 506.63 samples/sec	acc=0.385625	lossvalue=4.231593
+INFO:root:Epoch[0] Batch [2600-2700]	Speed: 505.19 samples/sec	acc=0.385562	lossvalue=4.212449
+INFO:root:Epoch[0] Batch [2700-2800]	Speed: 506.55 samples/sec	acc=0.402500	lossvalue=4.101275
+INFO:root:Epoch[0] Batch [2800-2900]	Speed: 505.83 samples/sec	acc=0.414375	lossvalue=3.997272
+INFO:root:Epoch[0] Batch [2900-3000]	Speed: 138.92 samples/sec	acc=0.427063	lossvalue=3.903968
+INFO:root:Epoch[0] Train-acc=0.222803
+INFO:root:Epoch[0] Train-lossvalue=5.744846
+INFO:root:Epoch[0] Time cost=1215.901
+INFO:root:Epoch[1] Batch [0-100]	Speed: 508.26 samples/sec	acc=0.474938	lossvalue=3.544858
+INFO:root:Epoch[1] Batch [100-200]	Speed: 507.84 samples/sec	acc=0.477375	lossvalue=3.512070
+INFO:root:Epoch[1] Batch [200-300]	Speed: 506.82 samples/sec	acc=0.497312	lossvalue=3.434812
+INFO:root:Epoch[1] Batch [300-400]	Speed: 507.79 samples/sec	acc=0.495625	lossvalue=3.434612
+INFO:root:Epoch[1] Batch [400-500]	Speed: 506.40 samples/sec	acc=0.504000	lossvalue=3.364245
+INFO:root:Epoch[1] Batch [500-600]	Speed: 507.22 samples/sec	acc=0.515437	lossvalue=3.308387
+INFO:root:Epoch[1] Batch [600-700]	Speed: 506.47 samples/sec	acc=0.520062	lossvalue=3.256337
+INFO:root:Epoch[1] Batch [700-800]	Speed: 504.48 samples/sec	acc=0.528875	lossvalue=3.174522
+INFO:root:Epoch[1] Batch [800-900]	Speed: 505.69 samples/sec	acc=0.536750	lossvalue=3.158438
+INFO:root:Epoch[1] Batch [900-1000]	Speed: 139.01 samples/sec	acc=0.544063	lossvalue=3.104435
+INFO:root:Epoch[1] Batch [1000-1100]	Speed: 508.45 samples/sec	acc=0.555250	lossvalue=3.039875
+INFO:root:Epoch[1] Batch [1100-1200]	Speed: 507.98 samples/sec	acc=0.556438	lossvalue=3.034215
+INFO:root:Epoch[1] Batch [1200-1300]	Speed: 506.52 samples/sec	acc=0.567187	lossvalue=2.959375
+INFO:root:Epoch[1] Batch [1300-1400]	Speed: 506.32 samples/sec	acc=0.574063	lossvalue=2.915724
+INFO:root:Epoch[1] Batch [1400-1500]	Speed: 507.40 samples/sec	acc=0.582313	lossvalue=2.860226
+INFO:root:Epoch[1] Batch [1500-1600]	Speed: 506.12 samples/sec	acc=0.588313	lossvalue=2.830622
+INFO:root:Epoch[1] Batch [1600-1700]	Speed: 504.84 samples/sec	acc=0.596812	lossvalue=2.770366
+INFO:root:Epoch[1] Batch [1700-1800]	Speed: 507.31 samples/sec	acc=0.605250	lossvalue=2.764704
+INFO:root:Epoch[1] Batch [1800-1900]	Speed: 504.49 samples/sec	acc=0.611000	lossvalue=2.711326
+lr-batch-epoch: 0.001 999 0
+testing verification..
+(12000, 256)
+infer time 11.330266
+[calfw][1000]XNorm: 17.332186
+[calfw][1000]Accuracy-Flip: 0.73783+-0.01613
+testing verification..
+(14000, 256)
+infer time 12.9722
+[cfp_fp][1000]XNorm: 14.003539
+[cfp_fp][1000]Accuracy-Flip: 0.75600+-0.01985
+testing verification..
+(12000, 256)
+infer time 11.053179
+[agedb_30][1000]XNorm: 15.173354
+[agedb_30][1000]Accuracy-Flip: 0.71250+-0.01259
+testing verification..
+(14000, 256)
+infer time 12.98301
+[cfp_ff][1000]XNorm: 16.174591
+[cfp_ff][1000]Accuracy-Flip: 0.89257+-0.01082
+testing verification..
+(12000, 256)
+infer time 11.057235
+[cplfw][1000]XNorm: 14.701827
+[cplfw][1000]Accuracy-Flip: 0.67333+-0.02678
+testing verification..
+(12000, 256)
+infer time 11.075429
+[lfw][1000]XNorm: 17.318398
+[lfw][1000]Accuracy-Flip: 0.89033+-0.01775
+[1000]Accuracy-Highest: 0.89033
+lr-batch-epoch: 0.001 1999 0
+testing verification..
+(12000, 256)
+infer time 11.502738
+[calfw][2000]XNorm: 17.606984
+[calfw][2000]Accuracy-Flip: 0.77067+-0.01444
+testing verification..
+(14000, 256)
+infer time 13.107782
+[cfp_fp][2000]XNorm: 14.660490
+[cfp_fp][2000]Accuracy-Flip: 0.78043+-0.01331
+testing verification..
+(12000, 256)
+infer time 11.178731
+[agedb_30][2000]XNorm: 15.797019
+[agedb_30][2000]Accuracy-Flip: 0.76050+-0.02280
+testing verification..
+(14000, 256)
+infer time 13.115457
+[cfp_ff][2000]XNorm: 17.071772
+[cfp_ff][2000]Accuracy-Flip: 0.92243+-0.01456
+testing verification..
+(12000, 256)
+infer time 11.158803
+[cplfw][2000]XNorm: 14.738337
+[cplfw][2000]Accuracy-Flip: 0.70650+-0.02855
+testing verification..
+(12000, 256)
+infer time 11.105333
+[lfw][2000]XNorm: 17.386341
+[lfw][2000]Accuracy-Flip: 0.92650+-0.01580
+[2000]Accuracy-Highest: 0.92650
+lr-batch-epoch: 0.001 2999 0
+testing verification..
+(12000, 256)
+infer time 11.521072
+[calfw][3000]XNorm: 17.411709
+[calfw][3000]Accuracy-Flip: 0.80783+-0.01397
+testing verification..
+(14000, 256)
+infer time 13.104892
+[cfp_fp][3000]XNorm: 14.667824
+[cfp_fp][3000]Accuracy-Flip: 0.80500+-0.01512
+testing verification..
+(12000, 256)
+infer time 11.176568
+[agedb_30][3000]XNorm: 16.173228
+[agedb_30][3000]Accuracy-Flip: 0.79467+-0.01719
+testing verification..
+(14000, 256)
+infer time 13.105296
+[cfp_ff][3000]XNorm: 17.233938
+[cfp_ff][3000]Accuracy-Flip: 0.93486+-0.01472
+testing verification..
+(12000, 256)
+infer time 11.158405
+[cplfw][3000]XNorm: 14.609947
+[cplfw][3000]Accuracy-Flip: 0.72767+-0.02353
+testing verification..
+(12000, 256)
+infer time 11.101582
+[lfw][3000]XNorm: 17.134710
+[lfw][3000]Accuracy-Flip: 0.93933+-0.01155
+[3000]Accuracy-Highest: 0.93933
+call reset()
+lr-batch-epoch: 0.001 933 1
+testing verification..
+(12000, 256)
+infer time 11.529437
+[calfw][4000]XNorm: 16.133764
+[calfw][4000]Accuracy-Flip: 0.83000+-0.00882
+testing verification..
+(14000, 256)
+infer time 13.144827
+[cfp_fp][4000]XNorm: 14.276880
+[cfp_fp][4000]Accuracy-Flip: 0.82843+-0.02040
+testing verification..
+(12000, 256)
+infer time 11.160179
+[agedb_30][4000]XNorm: 15.743472
+[agedb_30][4000]Accuracy-Flip: 0.78767+-0.02679
+testing verification..
+(14000, 256)
+infer time 13.10072
+[cfp_ff][4000]XNorm: 16.067696
+[cfp_ff][4000]Accuracy-Flip: 0.94771+-0.01211
+testing verification..
+(12000, 256)
+infer time 11.164987
+[cplfw][4000]XNorm: 13.908183
+[cplfw][4000]Accuracy-Flip: 0.75267+-0.02119
+testing verification..
+(12000, 256)
+infer time 11.174868
+[lfw][4000]XNorm: 15.725633
+[lfw][4000]Accuracy-Flip: 0.95950+-0.00978
+[4000]Accuracy-Highest: 0.95950
+lr-batch-epoch: 0.001 1933 1
+testing verification..
+(12000, 256)
+infer time 11.554208
+[calfw][5000]XNorm: 16.975424
+[calfw][5000]Accuracy-Flip: 0.83117+-0.01065
+testing verification..
+(14000, 256)
+infer time 13.171246
+[cfp_fp][5000]XNorm: 15.385821
+[cfp_fp][5000]Accuracy-Flip: 0.83929+-0.01691
+testing verification..
+(12000, 256)
+infer time 11.18775
+[agedb_30][5000]XNorm: 17.073369
+[agedb_30][5000]Accuracy-Flip: 0.79633+-0.02246
+testing verification..
+(14000, 256)
+infer time 13.0898
+[cfp_ff][5000]XNorm: 17.089878
+[cfp_ff][5000]Accuracy-Flip: 0.95400+-0.00795
+testing verification..
+(12000, 256)
+infer time 11.137968
+[cplfw][5000]XNorm: 14.992918
+[cINFO:root:Epoch[1] Batch [1900-2000]	Speed: 139.01 samples/sec	acc=0.603563	lossvalue=2.720776
+INFO:root:Epoch[1] Batch [2000-2100]	Speed: 507.55 samples/sec	acc=0.621188	lossvalue=2.618995
+INFO:root:Epoch[1] Batch [2100-2200]	Speed: 505.88 samples/sec	acc=0.625687	lossvalue=2.591261
+INFO:root:Epoch[1] Batch [2200-2300]	Speed: 506.03 samples/sec	acc=0.626563	lossvalue=2.575731
+INFO:root:Epoch[1] Batch [2300-2400]	Speed: 507.86 samples/sec	acc=0.627062	lossvalue=2.565987
+INFO:root:Epoch[1] Batch [2400-2500]	Speed: 506.26 samples/sec	acc=0.646250	lossvalue=2.490809
+INFO:root:Epoch[1] Batch [2500-2600]	Speed: 504.13 samples/sec	acc=0.639437	lossvalue=2.510280
+INFO:root:Epoch[1] Batch [2600-2700]	Speed: 506.10 samples/sec	acc=0.653687	lossvalue=2.443595
+INFO:root:Epoch[1] Batch [2700-2800]	Speed: 505.04 samples/sec	acc=0.655937	lossvalue=2.398841
+INFO:root:Epoch[1] Batch [2800-2900]	Speed: 505.41 samples/sec	acc=0.664687	lossvalue=2.368679
+INFO:root:Epoch[1] Batch [2900-3000]	Speed: 139.02 samples/sec	acc=0.671687	lossvalue=2.333023
+INFO:root:Epoch[1] Train-acc=0.580675
+INFO:root:Epoch[1] Train-lossvalue=2.881904
+INFO:root:Epoch[1] Time cost=1218.975
+INFO:root:Epoch[2] Batch [0-100]	Speed: 507.89 samples/sec	acc=0.725990	lossvalue=1.980122
+INFO:root:Epoch[2] Batch [100-200]	Speed: 506.25 samples/sec	acc=0.724187	lossvalue=1.992013
+INFO:root:Epoch[2] Batch [200-300]	Speed: 506.78 samples/sec	acc=0.724812	lossvalue=2.004491
+INFO:root:Epoch[2] Batch [300-400]	Speed: 504.15 samples/sec	acc=0.725500	lossvalue=1.972976
+INFO:root:Epoch[2] Batch [400-500]	Speed: 505.96 samples/sec	acc=0.726313	lossvalue=1.963618
+INFO:root:Epoch[2] Batch [500-600]	Speed: 504.81 samples/sec	acc=0.725437	lossvalue=1.973842
+INFO:root:Epoch[2] Batch [600-700]	Speed: 504.47 samples/sec	acc=0.724500	lossvalue=1.976014
+INFO:root:Epoch[2] Batch [700-800]	Speed: 504.39 samples/sec	acc=0.727375	lossvalue=1.959640
+INFO:root:Epoch[2] Batch [800-900]	Speed: 139.02 samples/sec	acc=0.732625	lossvalue=1.911797
+INFO:root:Epoch[2] Batch [900-1000]	Speed: 507.35 samples/sec	acc=0.732750	lossvalue=1.919835
+INFO:root:Epoch[2] Batch [1000-1100]	Speed: 507.54 samples/sec	acc=0.738812	lossvalue=1.882783
+INFO:root:Epoch[2] Batch [1100-1200]	Speed: 504.75 samples/sec	acc=0.734750	lossvalue=1.894244
+INFO:root:Epoch[2] Batch [1200-1300]	Speed: 505.60 samples/sec	acc=0.739563	lossvalue=1.892440
+INFO:root:Epoch[2] Batch [1300-1400]	Speed: 505.76 samples/sec	acc=0.743938	lossvalue=1.832998
+INFO:root:Epoch[2] Batch [1400-1500]	Speed: 505.73 samples/sec	acc=0.744750	lossvalue=1.861350
+INFO:root:Epoch[2] Batch [1500-1600]	Speed: 506.29 samples/sec	acc=0.741625	lossvalue=1.877453
+INFO:root:Epoch[2] Batch [1600-1700]	Speed: 505.36 samples/sec	acc=0.742687	lossvalue=1.863371
+INFO:root:Epoch[2] Batch [1700-1800]	Speed: 504.54 samples/sec	acc=0.744812	lossvalue=1.841563
+INFO:root:Epoch[2] Batch [1800-1900]	Speed: 138.98 samples/sec	acc=0.750062	lossvalue=1.796452
+INFO:root:Epoch[2] Batch [1900-2000]	Speed: 509.36 samples/sec	acc=0.752000	lossvalue=1.789111
+INFO:root:Epoch[2] Batch [2000-2100]	Speed: 506.74 samples/sec	acc=0.751687	lossvalue=1.793712
+INFO:root:Epoch[2] Batch [2100-2200]	Speed: 507.30 samples/sec	acc=0.752938	lossvalue=1.774031
+INFO:root:Epoch[2] Batch [2200-2300]	Speed: 505.03 samples/sec	acc=0.758500	lossvalue=1.755089
+INFO:root:Epoch[2] Batch [2300-2400]	Speed: 505.96 samples/sec	acc=0.758000	lossvalue=1.763729
+INFO:root:Epoch[2] Batch [2400-2500]	Speed: 505.50 samples/sec	acc=0.760062	lossvalue=1.752637
+INFO:root:Epoch[2] Batch [2500-2600]	Speed: 506.07 samples/sec	acc=0.760250	lossvalue=1.745097
+INFO:root:Epoch[2] Batch [2600-2700]	Speed: 505.16 samples/sec	acc=0.759813	lossvalue=1.738039
+INFO:root:Epoch[2] Batch [2700-2800]	Speed: 503.19 samples/sec	acc=0.769563	lossvalue=1.680186
+INFO:root:Epoch[2] Batch [2800-2900]	Speed: 138.86 samples/sec	acc=0.767250	lossvalue=1.687189
+INFO:root:Epoch[2] Batch [2900-3000]	Speed: 507.52 samples/sec	acc=0.765813	lossvalue=1.703222
+INFO:root:Epoch[2] Train-acc=0.744121
+INFO:root:Epoch[2] Train-lossvalue=1.849127
+INFO:root:Epoch[2] Time cost=1220.231
+INFO:root:Epoch[3] Batch [0-100]	Speed: 507.43 samples/sec	acc=0.823082	lossvalue=1.362043
+INFO:root:Epoch[3] Batch [100-200]	Speed: 506.89 samples/sec	acc=0.817187	lossvalue=1.366114
+INFO:root:Epoch[3] Batch [200-300]	Speed: 506.03 samples/sec	acc=0.816312	lossvalue=1.396859
+INFO:root:Epoch[3] Batch [300-400]	Speed: 504.81 samples/sec	acc=0.816813	lossvalue=1.390873
+INFO:root:Epoch[3] Batch [400-500]	Speed: 505.59 samples/sec	acc=0.813250	lossvalue=1.402841
+INFO:root:Epoch[3] Batch [500-600]	Speed: 504.16 samples/sec	acc=0.806937	lossvalue=1.419303
+INFO:root:Epoch[3] Batch [600-700]	Speed: 506.18 samples/sec	acc=0.817500	lossvalue=1.369449
+INFO:root:Epoch[3] Batch [700-800]	Speed: 506.01 samples/sec	acc=0.810750	lossvalue=1.419930
+plfw][5000]Accuracy-Flip: 0.76033+-0.02696
+testing verification..
+(12000, 256)
+infer time 11.170302
+[lfw][5000]XNorm: 16.548460
+[lfw][5000]Accuracy-Flip: 0.96017+-0.00647
+[5000]Accuracy-Highest: 0.96017
+lr-batch-epoch: 0.001 2933 1
+testing verification..
+(12000, 256)
+infer time 11.518477
+[calfw][6000]XNorm: 17.188388
+[calfw][6000]Accuracy-Flip: 0.85250+-0.01444
+testing verification..
+(14000, 256)
+infer time 13.110008
+[cfp_fp][6000]XNorm: 15.486949
+[cfp_fp][6000]Accuracy-Flip: 0.85000+-0.01125
+testing verification..
+(12000, 256)
+infer time 11.109249
+[agedb_30][6000]XNorm: 17.016958
+[agedb_30][6000]Accuracy-Flip: 0.82133+-0.02940
+testing verification..
+(14000, 256)
+infer time 13.152857
+[cfp_ff][6000]XNorm: 17.325650
+[cfp_ff][6000]Accuracy-Flip: 0.96143+-0.01012
+testing verification..
+(12000, 256)
+infer time 11.146995
+[cplfw][6000]XNorm: 14.808489
+[cplfw][6000]Accuracy-Flip: 0.77383+-0.02070
+testing verification..
+(12000, 256)
+infer time 11.197901
+[lfw][6000]XNorm: 16.447682
+[lfw][6000]Accuracy-Flip: 0.96300+-0.00849
+[6000]Accuracy-Highest: 0.96300
+call reset()
+lr-batch-epoch: 0.001 867 2
+testing verification..
+(12000, 256)
+infer time 11.540129
+[calfw][7000]XNorm: 16.573789
+[calfw][7000]Accuracy-Flip: 0.85000+-0.01123
+testing verification..
+(14000, 256)
+infer time 13.12401
+[cfp_fp][7000]XNorm: 15.588845
+[cfp_fp][7000]Accuracy-Flip: 0.85814+-0.01361
+testing verification..
+(12000, 256)
+infer time 11.160424
+[agedb_30][7000]XNorm: 17.100426
+[agedb_30][7000]Accuracy-Flip: 0.82017+-0.01760
+testing verification..
+(14000, 256)
+infer time 13.027718
+[cfp_ff][7000]XNorm: 16.771528
+[cfp_ff][7000]Accuracy-Flip: 0.96471+-0.00915
+testing verification..
+(12000, 256)
+infer time 11.124729
+[cplfw][7000]XNorm: 15.164757
+[cplfw][7000]Accuracy-Flip: 0.78367+-0.02244
+testing verification..
+(12000, 256)
+infer time 11.11628
+[lfw][7000]XNorm: 16.090020
+[lfw][7000]Accuracy-Flip: 0.96833+-0.00799
+[7000]Accuracy-Highest: 0.96833
+lr-batch-epoch: 0.001 1867 2
+testing verification..
+(12000, 256)
+infer time 11.550303
+[calfw][8000]XNorm: 16.799658
+[calfw][8000]Accuracy-Flip: 0.86183+-0.01112
+testing verification..
+(14000, 256)
+infer time 13.129143
+[cfp_fp][8000]XNorm: 16.030759
+[cfp_fp][8000]Accuracy-Flip: 0.85029+-0.01579
+testing verification..
+(12000, 256)
+infer time 11.192408
+[agedb_30][8000]XNorm: 17.278330
+[agedb_30][8000]Accuracy-Flip: 0.83167+-0.02202
+testing verification..
+(14000, 256)
+infer time 13.11105
+[cfp_ff][8000]XNorm: 17.117939
+[cfp_ff][8000]Accuracy-Flip: 0.96186+-0.00777
+testing verification..
+(12000, 256)
+infer time 11.128638
+[cplfw][8000]XNorm: 15.383899
+[cplfw][8000]Accuracy-Flip: 0.78767+-0.01820
+testing verification..
+(12000, 256)
+infer time 11.131688
+[lfw][8000]XNorm: 16.424120
+[lfw][8000]Accuracy-Flip: 0.96783+-0.00830
+[8000]Accuracy-Highest: 0.96833
+lr-batch-epoch: 0.001 2867 2
+testing verification..
+(12000, 256)
+infer time 11.557769
+[calfw][9000]XNorm: 17.076671
+[calfw][9000]Accuracy-Flip: 0.85617+-0.01062
+testing verification..
+(14000, 256)
+infer time 13.136318
+[cfp_fp][9000]XNorm: 16.320848
+[cfp_fp][9000]Accuracy-Flip: 0.86543+-0.01483
+testing verification..
+(12000, 256)
+infer time 11.209173
+[agedb_30][9000]XNorm: 18.002104
+[agedb_30][9000]Accuracy-Flip: 0.83800+-0.02413
+testing verification..
+(14000, 256)
+infer time 13.068602
+[cfp_ff][9000]XNorm: 17.341740
+[cfp_ff][9000]Accuracy-Flip: 0.96429+-0.01059
+testing verification..
+(12000, 256)
+infer time 11.132806
+[cplfw][9000]XNorm: 15.770922
+[cplfw][9000]Accuracy-Flip: 0.78800+-0.02263
+testing verification..
+(12000, 256)
+infer time 11.164412
+[lfw][9000]XNorm: 16.601768
+[lfw][9000]Accuracy-Flip: 0.97250+-0.00765
+[9000]Accuracy-Highest: 0.97250
+call reset()
+lr change to 0.0001
+lr-batch-epoch: 0.0001 801 3
+testing verification..
+(12000, 256)
+infer time 11.542743
+[calfw][10000]XNorm: 16.787734
+[calfw][10000]Accuracy-Flip: 0.86250+-0.01478
+testing verification..
+(14000, 256)
+infer time 13.113487
+[cfp_fp][10000]XNorm: 16.619809
+[cfp_fp][10000]Accuracy-Flip: 0.87000+-0.01181
+testing verification..
+(12000, 256)
+infer time 11.162326
+[agedb_30][10000]XNorm: 17.741869
+[agedb_30][10000]AccuracyINFO:root:Epoch[3] Batch [800-900]	Speed: 139.12 samples/sec	acc=0.813187	lossvalue=1.395304
+INFO:root:Epoch[3] Batch [900-1000]	Speed: 505.89 samples/sec	acc=0.816500	lossvalue=1.404278
+INFO:root:Epoch[3] Batch [1000-1100]	Speed: 505.01 samples/sec	acc=0.812625	lossvalue=1.380271
+INFO:root:Epoch[3] Batch [1100-1200]	Speed: 505.81 samples/sec	acc=0.812187	lossvalue=1.402324
+INFO:root:Epoch[3] Batch [1200-1300]	Speed: 505.44 samples/sec	acc=0.814750	lossvalue=1.370147
+INFO:root:Epoch[3] Batch [1300-1400]	Speed: 504.77 samples/sec	acc=0.811875	lossvalue=1.383118
+INFO:root:Epoch[3] Batch [1400-1500]	Speed: 506.09 samples/sec	acc=0.815750	lossvalue=1.370389
+INFO:root:Epoch[3] Batch [1500-1600]	Speed: 505.48 samples/sec	acc=0.810125	lossvalue=1.410433
+INFO:root:Epoch[3] Batch [1600-1700]	Speed: 505.44 samples/sec	acc=0.812438	lossvalue=1.383585
+INFO:root:Epoch[3] Batch [1700-1800]	Speed: 506.07 samples/sec	acc=0.812875	lossvalue=1.367496
+INFO:root:Epoch[3] Batch [1800-1900]	Speed: 139.04 samples/sec	acc=0.816125	lossvalue=1.359230
+INFO:root:Epoch[3] Batch [1900-2000]	Speed: 504.62 samples/sec	acc=0.820750	lossvalue=1.338002
+INFO:root:Epoch[3] Batch [2000-2100]	Speed: 508.01 samples/sec	acc=0.815562	lossvalue=1.361356
+INFO:root:Epoch[3] Batch [2100-2200]	Speed: 505.19 samples/sec	acc=0.814125	lossvalue=1.390380
+INFO:root:Epoch[3] Batch [2200-2300]	Speed: 505.99 samples/sec	acc=0.812750	lossvalue=1.391991
+INFO:root:Epoch[3] Batch [2300-2400]	Speed: 504.86 samples/sec	acc=0.816125	lossvalue=1.377020
+INFO:root:Epoch[3] Batch [2400-2500]	Speed: 504.49 samples/sec	acc=0.810500	lossvalue=1.390751
+INFO:root:Epoch[3] Batch [2500-2600]	Speed: 506.27 samples/sec	acc=0.822937	lossvalue=1.325309
+INFO:root:Epoch[3] Batch [2600-2700]	Speed: 504.84 samples/sec	acc=0.816063	lossvalue=1.389049
+INFO:root:Epoch[3] Batch [2700-2800]	Speed: 506.59 samples/sec	acc=0.817937	lossvalue=1.364850
+INFO:root:Epoch[3] Batch [2800-2900]	Speed: 138.65 samples/sec	acc=0.815375	lossvalue=1.368570
+INFO:root:Epoch[3] Batch [2900-3000]	Speed: 506.96 samples/sec	acc=0.822125	lossvalue=1.336040
+INFO:root:Epoch[3] Train-acc=0.815293
+INFO:root:Epoch[3] Train-lossvalue=1.377776
+INFO:root:Epoch[3] Time cost=1220.484
+INFO:root:Epoch[4] Batch [0-100]	Speed: 508.61 samples/sec	acc=0.863119	lossvalue=1.062484
+INFO:root:Epoch[4] Batch [100-200]	Speed: 505.77 samples/sec	acc=0.863187	lossvalue=1.038589
+INFO:root:Epoch[4] Batch [200-300]	Speed: 506.30 samples/sec	acc=0.864187	lossvalue=1.060048
+INFO:root:Epoch[4] Batch [300-400]	Speed: 503.98 samples/sec	acc=0.853500	lossvalue=1.113548
+INFO:root:Epoch[4] Batch [400-500]	Speed: 504.27 samples/sec	acc=0.859750	lossvalue=1.083858
+INFO:root:Epoch[4] Batch [500-600]	Speed: 505.92 samples/sec	acc=0.856313	lossvalue=1.109020
+INFO:root:Epoch[4] Batch [600-700]	Speed: 505.08 samples/sec	acc=0.856500	lossvalue=1.094432
+INFO:root:Epoch[4] Batch [700-800]	Speed: 138.68 samples/sec	acc=0.857187	lossvalue=1.082226
+INFO:root:Epoch[4] Batch [800-900]	Speed: 507.30 samples/sec	acc=0.856938	lossvalue=1.114115
+INFO:root:Epoch[4] Batch [900-1000]	Speed: 504.09 samples/sec	acc=0.852375	lossvalue=1.112501
+INFO:root:Epoch[4] Batch [1000-1100]	Speed: 503.91 samples/sec	acc=0.857750	lossvalue=1.095103
+INFO:root:Epoch[4] Batch [1100-1200]	Speed: 504.79 samples/sec	acc=0.855000	lossvalue=1.094553
+INFO:root:Epoch[4] Batch [1200-1300]	Speed: 505.12 samples/sec	acc=0.851187	lossvalue=1.134473
+INFO:root:Epoch[4] Batch [1300-1400]	Speed: 504.47 samples/sec	acc=0.850000	lossvalue=1.133660
+INFO:root:Epoch[4] Batch [1400-1500]	Speed: 504.41 samples/sec	acc=0.853375	lossvalue=1.119589
+INFO:root:Epoch[4] Batch [1500-1600]	Speed: 503.91 samples/sec	acc=0.854375	lossvalue=1.105971
+INFO:root:Epoch[4] Batch [1600-1700]	Speed: 506.28 samples/sec	acc=0.849000	lossvalue=1.133051
+INFO:root:Epoch[4] Batch [1700-1800]	Speed: 138.88 samples/sec	acc=0.842375	lossvalue=1.165482
+INFO:root:Epoch[4] Batch [1800-1900]	Speed: 505.71 samples/sec	acc=0.848625	lossvalue=1.145076
+INFO:root:Epoch[4] Batch [1900-2000]	Speed: 506.79 samples/sec	acc=0.852500	lossvalue=1.110459
+INFO:root:Epoch[4] Batch [2000-2100]	Speed: 506.94 samples/sec	acc=0.849688	lossvalue=1.127881
+INFO:root:Epoch[4] Batch [2100-2200]	Speed: 505.89 samples/sec	acc=0.852125	lossvalue=1.119480
+INFO:root:Epoch[4] Batch [2200-2300]	Speed: 506.01 samples/sec	acc=0.851063	lossvalue=1.132048
+INFO:root:Epoch[4] Batch [2300-2400]	Speed: 505.01 samples/sec	acc=0.846812	lossvalue=1.139907
+INFO:root:Epoch[4] Batch [2400-2500]	Speed: 505.15 samples/sec	acc=0.853000	lossvalue=1.132544
+INFO:root:Epoch[4] Batch [2500-2600]	Speed: 503.88 samples/sec	acc=0.848500	lossvalue=1.141306
+INFO:root:Epoch[4] Batch [2600-2700]	Speed: 505.75 samples/sec	acc=0.852062	lossvalue=1.104217
+-Flip: 0.83500+-0.02501
+testing verification..
+(14000, 256)
+infer time 13.156902
+[cfp_ff][10000]XNorm: 17.085421
+[cfp_ff][10000]Accuracy-Flip: 0.96657+-0.00819
+testing verification..
+(12000, 256)
+infer time 11.18624
+[cplfw][10000]XNorm: 16.045792
+[cplfw][10000]Accuracy-Flip: 0.79617+-0.01989
+testing verification..
+(12000, 256)
+infer time 11.107397
+[lfw][10000]XNorm: 16.451687
+[lfw][10000]Accuracy-Flip: 0.97133+-0.00674
+[10000]Accuracy-Highest: 0.97250
+lr-batch-epoch: 0.0001 1801 3
+testing verification..
+(12000, 256)
+infer time 11.53858
+[calfw][11000]XNorm: 16.872678
+[calfw][11000]Accuracy-Flip: 0.86633+-0.01233
+testing verification..
+(14000, 256)
+infer time 13.155905
+[cfp_fp][11000]XNorm: 16.742626
+[cfp_fp][11000]Accuracy-Flip: 0.87157+-0.01047
+testing verification..
+(12000, 256)
+infer time 11.192486
+[agedb_30][11000]XNorm: 17.778161
+[agedb_30][11000]Accuracy-Flip: 0.84183+-0.02966
+testing verification..
+(14000, 256)
+infer time 13.114196
+[cfp_ff][11000]XNorm: 17.210175
+[cfp_ff][11000]Accuracy-Flip: 0.97000+-0.00561
+testing verification..
+(12000, 256)
+infer time 11.205913
+[cplfw][11000]XNorm: 16.120719
+[cplfw][11000]Accuracy-Flip: 0.80183+-0.02163
+testing verification..
+(12000, 256)
+infer time 11.154329
+[lfw][11000]XNorm: 16.519256
+[lfw][11000]Accuracy-Flip: 0.97150+-0.00740
+[11000]Accuracy-Highest: 0.97250
+lr-batch-epoch: 0.0001 2801 3
+testing verification..
+(12000, 256)
+infer time 11.600289
+[calfw][12000]XNorm: 15.921222
+[calfw][12000]Accuracy-Flip: 0.87150+-0.01554
+testing verification..
+(14000, 256)
+infer time 13.128598
+[cfp_fp][12000]XNorm: 15.946443
+[cfp_fp][12000]Accuracy-Flip: 0.87300+-0.01282
+testing verification..
+(12000, 256)
+infer time 11.206544
+[agedb_30][12000]XNorm: 17.011123
+[agedb_30][12000]Accuracy-Flip: 0.84567+-0.03116
+testing verification..
+(14000, 256)
+infer time 13.086241
+[cfp_ff][12000]XNorm: 16.118229
+[cfp_ff][12000]Accuracy-Flip: 0.97243+-0.00676
+testing verification..
+(12000, 256)
+infer time 11.199105
+[cplfw][12000]XNorm: 15.420686
+[cplfw][12000]Accuracy-Flip: 0.81100+-0.01945
+testing verification..
+(12000, 256)
+infer time 11.160355
+[lfw][12000]XNorm: 15.547198
+[lfw][12000]Accuracy-Flip: 0.97417+-0.00501
+[12000]Accuracy-Highest: 0.97417
+call reset()
+lr-batch-epoch: 0.0001 735 4
+testing verification..
+(12000, 256)
+infer time 11.589153
+[calfw][13000]XNorm: 16.870497
+[calfw][13000]Accuracy-Flip: 0.87633+-0.01308
+testing verification..
+(14000, 256)
+infer time 13.181387
+[cfp_fp][13000]XNorm: 17.094615
+[cfp_fp][13000]Accuracy-Flip: 0.88329+-0.01440
+testing verification..
+(12000, 256)
+infer time 11.203384
+[agedb_30][13000]XNorm: 17.819275
+[agedb_30][13000]Accuracy-Flip: 0.84600+-0.02672
+testing verification..
+(14000, 256)
+infer time 13.142083
+[cfp_ff][13000]XNorm: 17.269009
+[cfp_ff][13000]Accuracy-Flip: 0.97086+-0.00692
+testing verification..
+(12000, 256)
+infer time 11.206812
+[cplfw][13000]XNorm: 16.402874
+[cplfw][13000]Accuracy-Flip: 0.82133+-0.02357
+testing verification..
+(12000, 256)
+infer time 11.110395
+[lfw][13000]XNorm: 16.520216
+[lfw][13000]Accuracy-Flip: 0.97500+-0.00516
+[13000]Accuracy-Highest: 0.97500
+lr-batch-epoch: 0.0001 1735 4
+testing verification..
+(12000, 256)
+infer time 11.57394
+[calfw][14000]XNorm: 16.281833
+[calfw][14000]Accuracy-Flip: 0.86800+-0.00966
+testing verification..
+(14000, 256)
+infer time 13.194242
+[cfp_fp][14000]XNorm: 16.263261
+[cfp_fp][14000]Accuracy-Flip: 0.87257+-0.01401
+testing verification..
+(12000, 256)
+infer time 11.192018
+[agedb_30][14000]XNorm: 17.357881
+[agedb_30][14000]Accuracy-Flip: 0.85400+-0.03182
+testing verification..
+(14000, 256)
+infer time 13.195229
+[cfp_ff][14000]XNorm: 16.244680
+[cfp_ff][14000]Accuracy-Flip: 0.97129+-0.00872
+testing verification..
+(12000, 256)
+infer time 11.128481
+[cplfw][14000]XNorm: 16.007775
+[cplfw][14000]Accuracy-Flip: 0.80017+-0.01501
+testing verification..
+(12000, 256)
+infer time 11.163397
+[lfw][14000]XNorm: 16.056324
+[lfw][14000]Accuracy-Flip: 0.97317+-0.00732
+[14000]Accuracy-Highest: 0.97500
+lr-batch-epoch: 0.0001 2735 4
+testing verification..
+(12000, 256)
+infer time 11.625252
+[calfw][15000]XNorm: 15.695447
+[calfw][15000]AccuraINFO:root:Epoch[4] Batch [2700-2800]	Speed: 138.53 samples/sec	acc=0.849250	lossvalue=1.114881
+INFO:root:Epoch[4] Batch [2800-2900]	Speed: 506.26 samples/sec	acc=0.849375	lossvalue=1.143708
+INFO:root:Epoch[4] Batch [2900-3000]	Speed: 505.17 samples/sec	acc=0.854563	lossvalue=1.101949
+INFO:root:Epoch[4] Train-acc=0.853319
+INFO:root:Epoch[4] Train-lossvalue=1.112627
+INFO:root:Epoch[4] Time cost=1221.749
+INFO:root:Epoch[5] Batch [0-100]	Speed: 504.98 samples/sec	acc=0.891151	lossvalue=0.857259
+INFO:root:Epoch[5] Batch [100-200]	Speed: 505.37 samples/sec	acc=0.889000	lossvalue=0.849584
+INFO:root:Epoch[5] Batch [200-300]	Speed: 505.54 samples/sec	acc=0.884250	lossvalue=0.883286
+INFO:root:Epoch[5] Batch [300-400]	Speed: 504.10 samples/sec	acc=0.886250	lossvalue=0.868751
+INFO:root:Epoch[5] Batch [400-500]	Speed: 503.97 samples/sec	acc=0.888062	lossvalue=0.857998
+INFO:root:Epoch[5] Batch [500-600]	Speed: 502.93 samples/sec	acc=0.883813	lossvalue=0.891997
+INFO:root:Epoch[5] Batch [600-700]	Speed: 141.39 samples/sec	acc=0.880625	lossvalue=0.886537
+INFO:root:Epoch[5] Batch [700-800]	Speed: 505.10 samples/sec	acc=0.883687	lossvalue=0.893693
+INFO:root:Epoch[5] Batch [800-900]	Speed: 506.75 samples/sec	acc=0.880250	lossvalue=0.911466
+INFO:root:Epoch[5] Batch [900-1000]	Speed: 505.68 samples/sec	acc=0.883938	lossvalue=0.912898
+INFO:root:Epoch[5] Batch [1000-1100]	Speed: 505.64 samples/sec	acc=0.880062	lossvalue=0.917197
+INFO:root:Epoch[5] Batch [1100-1200]	Speed: 505.69 samples/sec	acc=0.868875	lossvalue=0.982701
+INFO:root:Epoch[5] Batch [1200-1300]	Speed: 505.30 samples/sec	acc=0.879062	lossvalue=0.927106
+INFO:root:Epoch[5] Batch [1300-1400]	Speed: 504.59 samples/sec	acc=0.873250	lossvalue=0.937231
+INFO:root:Epoch[5] Batch [1400-1500]	Speed: 503.84 samples/sec	acc=0.871875	lossvalue=0.956371
+INFO:root:Epoch[5] Batch [1500-1600]	Speed: 505.19 samples/sec	acc=0.877812	lossvalue=0.933637
+INFO:root:Epoch[5] Batch [1600-1700]	Speed: 141.34 samples/sec	acc=0.874875	lossvalue=0.942562
+INFO:root:Epoch[5] Batch [1700-1800]	Speed: 508.04 samples/sec	acc=0.872125	lossvalue=0.956901
+INFO:root:Epoch[5] Batch [1800-1900]	Speed: 506.97 samples/sec	acc=0.870750	lossvalue=0.961259
+INFO:root:Epoch[5] Batch [1900-2000]	Speed: 505.42 samples/sec	acc=0.873875	lossvalue=0.949929
+INFO:root:Epoch[5] Batch [2000-2100]	Speed: 506.21 samples/sec	acc=0.873062	lossvalue=0.956806
+INFO:root:Epoch[5] Batch [2100-2200]	Speed: 504.00 samples/sec	acc=0.873500	lossvalue=0.967748
+INFO:root:Epoch[5] Batch [2200-2300]	Speed: 505.42 samples/sec	acc=0.871687	lossvalue=0.961933
+INFO:root:Epoch[5] Batch [2300-2400]	Speed: 505.25 samples/sec	acc=0.875938	lossvalue=0.949842
+INFO:root:Epoch[5] Batch [2400-2500]	Speed: 505.70 samples/sec	acc=0.871125	lossvalue=0.982726
+INFO:root:Epoch[5] Batch [2500-2600]	Speed: 504.20 samples/sec	acc=0.867188	lossvalue=0.991826
+INFO:root:Epoch[5] Batch [2600-2700]	Speed: 141.26 samples/sec	acc=0.870062	lossvalue=0.954174
+INFO:root:Epoch[5] Batch [2700-2800]	Speed: 508.62 samples/sec	acc=0.871750	lossvalue=0.957849
+INFO:root:Epoch[5] Batch [2800-2900]	Speed: 505.65 samples/sec	acc=0.870938	lossvalue=0.961009
+INFO:root:Epoch[5] Batch [2900-3000]	Speed: 505.54 samples/sec	acc=0.870875	lossvalue=0.984281
+INFO:root:Epoch[5] Train-acc=0.876753
+INFO:root:Epoch[5] Train-lossvalue=0.933185
+INFO:root:Epoch[5] Time cost=1215.349
+INFO:root:Epoch[6] Batch [0-100]	Speed: 505.29 samples/sec	acc=0.909035	lossvalue=0.705728
+INFO:root:Epoch[6] Batch [100-200]	Speed: 505.22 samples/sec	acc=0.905438	lossvalue=0.717247
+INFO:root:Epoch[6] Batch [200-300]	Speed: 505.80 samples/sec	acc=0.906250	lossvalue=0.732176
+INFO:root:Epoch[6] Batch [300-400]	Speed: 505.32 samples/sec	acc=0.903000	lossvalue=0.739493
+INFO:root:Epoch[6] Batch [400-500]	Speed: 505.34 samples/sec	acc=0.906062	lossvalue=0.729540
+INFO:root:Epoch[6] Batch [500-600]	Speed: 504.74 samples/sec	acc=0.904687	lossvalue=0.737287
+cy-Flip: 0.87217+-0.01247
+testing verification..
+(14000, 256)
+infer time 13.1741
+[cfp_fp][15000]XNorm: 16.219713
+[cfp_fp][15000]Accuracy-Flip: 0.88343+-0.01666
+testing verification..
+(12000, 256)
+infer time 11.285497
+[agedb_30][15000]XNorm: 17.201771
+[agedb_30][15000]Accuracy-Flip: 0.85500+-0.02308
+testing verification..
+(14000, 256)
+infer time 13.184263
+[cfp_ff][15000]XNorm: 15.972513
+[cfp_ff][15000]Accuracy-Flip: 0.97329+-0.00620
+testing verification..
+(12000, 256)
+infer time 11.198944
+[cplfw][15000]XNorm: 15.732629
+[cplfw][15000]Accuracy-Flip: 0.80750+-0.01964
+testing verification..
+(12000, 256)
+infer time 11.172287
+[lfw][15000]XNorm: 15.501304
+[lfw][15000]Accuracy-Flip: 0.97417+-0.00783
+[15000]Accuracy-Highest: 0.97500
+call reset()
+lr-batch-epoch: 0.0001 669 5
+testing verification..
+(12000, 256)
+infer time 11.173046
+[calfw][16000]XNorm: 15.826672
+[calfw][16000]Accuracy-Flip: 0.87350+-0.01136
+testing verification..
+(14000, 256)
+infer time 12.780223
+[cfp_fp][16000]XNorm: 16.573012
+[cfp_fp][16000]Accuracy-Flip: 0.87829+-0.01506
+testing verification..
+(12000, 256)
+infer time 10.856235
+[agedb_30][16000]XNorm: 16.885534
+[agedb_30][16000]Accuracy-Flip: 0.84883+-0.02412
+testing verification..
+(14000, 256)
+infer time 12.755146
+[cfp_ff][16000]XNorm: 16.044515
+[cfp_ff][16000]Accuracy-Flip: 0.96929+-0.00884
+testing verification..
+(12000, 256)
+infer time 10.813231
+[cplfw][16000]XNorm: 16.179773
+[cplfw][16000]Accuracy-Flip: 0.80917+-0.01999
+testing verification..
+(12000, 256)
+infer time 10.839056
+[lfw][16000]XNorm: 15.721490
+[lfw][16000]Accuracy-Flip: 0.97100+-0.00731
+[16000]Accuracy-Highest: 0.97500
+lr-batch-epoch: 0.0001 1669 5
+testing verification..
+(12000, 256)
+infer time 11.207449
+[calfw][17000]XNorm: 16.877014
+[calfw][17000]Accuracy-Flip: 0.87700+-0.01120
+testing verification..
+(14000, 256)
+infer time 12.76805
+[cfp_fp][17000]XNorm: 17.447682
+[cfp_fp][17000]Accuracy-Flip: 0.87129+-0.01502
+testing verification..
+(12000, 256)
+infer time 10.865951
+[agedb_30][17000]XNorm: 18.094885
+[agedb_30][17000]Accuracy-Flip: 0.85717+-0.02616
+testing verification..
+(14000, 256)
+infer time 12.726897
+[cfp_ff][17000]XNorm: 17.333621
+[cfp_ff][17000]Accuracy-Flip: 0.97243+-0.00606
+testing verification..
+(12000, 256)
+infer time 10.863954
+[cplfw][17000]XNorm: 16.768913
+[cplfw][17000]Accuracy-Flip: 0.81100+-0.02204
+testing verification..
+(12000, 256)
+infer time 10.862454
+[lfw][17000]XNorm: 16.566503
+[lfw][17000]Accuracy-Flip: 0.97800+-0.00718
+[17000]Accuracy-Highest: 0.97800
+lr-batch-epoch: 0.0001 2669 5
+testing verification..
+(12000, 256)
+infer time 11.272681
+[calfw][18000]XNorm: 16.893708
+[calfw][18000]Accuracy-Flip: 0.87933+-0.00712
+testing verification..
+(14000, 256)
+infer time 12.742803
+[cfp_fp][18000]XNorm: 17.434790
+[cfp_fp][18000]Accuracy-Flip: 0.87886+-0.01162
+testing verification..
+(12000, 256)
+infer time 10.810806
+[agedb_30][18000]XNorm: 18.166579
+[agedb_30][18000]Accuracy-Flip: 0.84683+-0.02224
+testing verification..
+(14000, 256)
+infer time 12.699387
+[cfp_ff][18000]XNorm: 17.145349
+[cfp_ff][18000]Accuracy-Flip: 0.96771+-0.00895
+testing verification..
+(12000, 256)
+infer time 10.866702
+[cplfw][18000]XNorm: 16.977220
+[cplfw][18000]Accuracy-Flip: 0.81583+-0.01941
+testing verification..
+(12000, 256)
+infer time 10.80832
+[lfw][18000]XNorm: 16.742931
+[lfw][18000]Accuracy-Flip: 0.97750+-0.00620
+[18000]Accuracy-Highest: 0.97800
+call reset()
+lr-batch-epoch: 0.0001 603 6
+testing verification..
+(12000, 256)
+infer time 11.232548
+[calfw][19000]XNorm: 16.074414
+[calfw][19000]Accuracy-Flip: 0.87333+-0.01057
+testing verification..
+(14000, 256)
+infer time 12.777873
+[cfp_fp][19000]XNorm: 16.952926
+[cfp_fp][19000]Accuracy-Flip: 0.87914+-0.01171
+testing verification..
+(12000, 256)
+infer time 10.761967
+[agedb_30][19000]XNorm: 17.520410
+[agedb_30][19000]Accuracy-Flip: 0.85033+-0.01907
+testing verification..
+(14000, 256)
+infer time 12.730134
+[cfp_ff][19000]XNorm: 16.178672
+[cfp_ff][19000]Accuracy-Flip: 0.97186+-0.00546
+testing verification..
+(12000, 256)
+infer time 10.860156
+[cplfw][19000]XNorm: 16.677750
+[cplfw][19000]Accuracy-Flip: 0.81350+-0.02001
+testing veriINFO:root:Epoch[6] Batch [600-700]	Speed: 141.38 samples/sec	acc=0.903875	lossvalue=0.746378
+INFO:root:Epoch[6] Batch [700-800]	Speed: 505.43 samples/sec	acc=0.903750	lossvalue=0.749799
+INFO:root:Epoch[6] Batch [800-900]	Speed: 507.12 samples/sec	acc=0.899062	lossvalue=0.782316
+INFO:root:Epoch[6] Batch [900-1000]	Speed: 504.15 samples/sec	acc=0.897687	lossvalue=0.784709
+INFO:root:Epoch[6] Batch [1000-1100]	Speed: 506.93 samples/sec	acc=0.894875	lossvalue=0.785031
+INFO:root:Epoch[6] Batch [1100-1200]	Speed: 506.14 samples/sec	acc=0.897813	lossvalue=0.793087
+INFO:root:Epoch[6] Batch [1200-1300]	Speed: 505.55 samples/sec	acc=0.893188	lossvalue=0.811589
+INFO:root:Epoch[6] Batch [1300-1400]	Speed: 505.58 samples/sec	acc=0.897750	lossvalue=0.787218
+INFO:root:Epoch[6] Batch [1400-1500]	Speed: 504.61 samples/sec	acc=0.898250	lossvalue=0.762680
+INFO:root:Epoch[6] Batch [1500-1600]	Speed: 505.34 samples/sec	acc=0.890125	lossvalue=0.822402
+INFO:root:Epoch[6] Batch [1600-1700]	Speed: 141.05 samples/sec	acc=0.890750	lossvalue=0.829216
+INFO:root:Epoch[6] Batch [1700-1800]	Speed: 502.79 samples/sec	acc=0.889437	lossvalue=0.810355
+INFO:root:Epoch[6] Batch [1800-1900]	Speed: 503.62 samples/sec	acc=0.889813	lossvalue=0.830822
+INFO:root:Epoch[6] Batch [1900-2000]	Speed: 503.34 samples/sec	acc=0.889938	lossvalue=0.825570
+INFO:root:Epoch[6] Batch [2000-2100]	Speed: 503.01 samples/sec	acc=0.885813	lossvalue=0.836432
+INFO:root:Epoch[6] Batch [2100-2200]	Speed: 500.98 samples/sec	acc=0.885250	lossvalue=0.846225
+INFO:root:Epoch[6] Batch [2200-2300]	Speed: 502.80 samples/sec	acc=0.888000	lossvalue=0.842253
+INFO:root:Epoch[6] Batch [2300-2400]	Speed: 501.75 samples/sec	acc=0.889750	lossvalue=0.828909
+INFO:root:Epoch[6] Batch [2400-2500]	Speed: 501.21 samples/sec	acc=0.890000	lossvalue=0.840084
+INFO:root:Epoch[6] Batch [2500-2600]	Speed: 499.39 samples/sec	acc=0.890125	lossvalue=0.817576
+INFO:root:Epoch[6] Batch [2600-2700]	Speed: 140.40 samples/sec	acc=0.886188	lossvalue=0.836496
+INFO:root:Epoch[6] Batch [2700-2800]	Speed: 502.89 samples/sec	acc=0.884062	lossvalue=0.858524
+INFO:root:Epoch[6] Batch [2800-2900]	Speed: 506.85 samples/sec	acc=0.884375	lossvalue=0.852018
+INFO:root:Epoch[6] Batch [2900-3000]	Speed: 505.30 samples/sec	acc=0.887938	lossvalue=0.845693
+INFO:root:Epoch[6] Train-acc=0.894482
+INFO:root:Epoch[6] Train-lossvalue=0.798192
+INFO:root:Epoch[6] Time cost=1217.949
+INFO:root:Epoch[7] Batch [0-100]	Speed: 507.97 samples/sec	acc=0.924072	lossvalue=0.593361
+INFO:root:Epoch[7] Batch [100-200]	Speed: 493.96 samples/sec	acc=0.922125	lossvalue=0.607219
+INFO:root:Epoch[7] Batch [200-300]	Speed: 502.26 samples/sec	acc=0.920438	lossvalue=0.618397
+INFO:root:Epoch[7] Batch [300-400]	Speed: 501.20 samples/sec	acc=0.918687	lossvalue=0.610479
+INFO:root:Epoch[7] Batch [400-500]	Speed: 503.49 samples/sec	acc=0.911375	lossvalue=0.674026
+INFO:root:Epoch[7] Batch [500-600]	Speed: 140.68 samples/sec	acc=0.916188	lossvalue=0.629624
+INFO:root:Epoch[7] Batch [600-700]	Speed: 505.84 samples/sec	acc=0.917438	lossvalue=0.635137
+INFO:root:Epoch[7] Batch [700-800]	Speed: 506.00 samples/sec	acc=0.915562	lossvalue=0.643654
+INFO:root:Epoch[7] Batch [800-900]	Speed: 503.90 samples/sec	acc=0.915937	lossvalue=0.640110
+INFO:root:Epoch[7] Batch [900-1000]	Speed: 504.45 samples/sec	acc=0.910000	lossvalue=0.676336
+INFO:root:Epoch[7] Batch [1000-1100]	Speed: 501.89 samples/sec	acc=0.908750	lossvalue=0.682586
+INFO:root:Epoch[7] Batch [1100-1200]	Speed: 504.35 samples/sec	acc=0.908500	lossvalue=0.698931
+INFO:root:Epoch[7] Batch [1200-1300]	Speed: 502.33 samples/sec	acc=0.909813	lossvalue=0.684817
+INFO:root:Epoch[7] Batch [1300-1400]	Speed: 503.54 samples/sec	acc=0.910875	lossvalue=0.666884
+INFO:root:Epoch[7] Batch [1400-1500]	Speed: 502.37 samples/sec	acc=0.905813	lossvalue=0.708825
+INFO:root:Epoch[7] Batch [1500-1600]	Speed: 140.07 samples/sec	acc=0.907625	lossvalue=0.696454
+INFO:root:Epoch[7] Batch [1600-1700]	Speed: 498.78 samples/sec	acc=0.904687	lossvalue=0.719364
+INFO:root:Epoch[7] Batch [1700-1800]	Speed: 494.30 samples/sec	acc=0.899875	lossvalue=0.742566
+INFO:root:Epoch[7] Batch [1800-1900]	Speed: 491.41 samples/sec	acc=0.907438	lossvalue=0.690462
+INFO:root:Epoch[7] Batch [1900-2000]	Speed: 490.19 samples/sec	acc=0.907625	lossvalue=0.694718
+INFO:root:Epoch[7] Batch [2000-2100]	Speed: 490.35 samples/sec	acc=0.905375	lossvalue=0.715978
+INFO:root:Epoch[7] Batch [2100-2200]	Speed: 492.87 samples/sec	acc=0.902750	lossvalue=0.728697
+INFO:root:Epoch[7] Batch [2200-2300]	Speed: 493.28 samples/sec	acc=0.902750	lossvalue=0.717517
+INFO:root:Epoch[7] Batch [2300-2400]	Speed: 493.23 samples/sec	acc=0.902813	lossvalue=0.726790
+INFO:root:Epoch[7] Batch [2400-2500]	Speed: 498.98 samples/sec	acc=0.904062	lossvalue=0.730765
+fication..
+(12000, 256)
+infer time 10.800719
+[lfw][19000]XNorm: 15.965707
+[lfw][19000]Accuracy-Flip: 0.97483+-0.00926
+[19000]Accuracy-Highest: 0.97800
+lr change to 1e-05
+lr-batch-epoch: 1e-05 1603 6
+testing verification..
+(12000, 256)
+infer time 11.238421
+[calfw][20000]XNorm: 16.311869
+[calfw][20000]Accuracy-Flip: 0.88283+-0.01101
+testing verification..
+(14000, 256)
+infer time 12.776746
+[cfp_fp][20000]XNorm: 17.346086
+[cfp_fp][20000]Accuracy-Flip: 0.89143+-0.01404
+testing verification..
+(12000, 256)
+infer time 10.876151
+[agedb_30][20000]XNorm: 17.676972
+[agedb_30][20000]Accuracy-Flip: 0.85033+-0.02189
+testing verification..
+(14000, 256)
+infer time 12.765934
+[cfp_ff][20000]XNorm: 16.597504
+[cfp_ff][20000]Accuracy-Flip: 0.97357+-0.00508
+testing verification..
+(12000, 256)
+infer time 10.849264
+[cplfw][20000]XNorm: 16.726464
+[cplfw][20000]Accuracy-Flip: 0.82450+-0.02185
+testing verification..
+(12000, 256)
+infer time 10.859374
+[lfw][20000]XNorm: 16.166623
+[lfw][20000]Accuracy-Flip: 0.97800+-0.00690
+[20000]Accuracy-Highest: 0.97800
+lr-batch-epoch: 1e-05 2603 6
+testing verification..
+(12000, 256)
+infer time 11.289399
+[calfw][21000]XNorm: 16.216201
+[calfw][21000]Accuracy-Flip: 0.87783+-0.00853
+testing verification..
+(14000, 256)
+infer time 12.847373
+[cfp_fp][21000]XNorm: 17.059407
+[cfp_fp][21000]Accuracy-Flip: 0.88643+-0.01052
+testing verification..
+(12000, 256)
+infer time 10.930259
+[agedb_30][21000]XNorm: 17.759083
+[agedb_30][21000]Accuracy-Flip: 0.85450+-0.02666
+testing verification..
+(14000, 256)
+infer time 12.786618
+[cfp_ff][21000]XNorm: 16.179718
+[cfp_ff][21000]Accuracy-Flip: 0.97329+-0.00818
+testing verification..
+(12000, 256)
+infer time 10.8859
+[cplfw][21000]XNorm: 16.728655
+[cplfw][21000]Accuracy-Flip: 0.82083+-0.01594
+testing verification..
+(12000, 256)
+infer time 10.897854
+[lfw][21000]XNorm: 16.013563
+[lfw][21000]Accuracy-Flip: 0.97717+-0.00796
+[21000]Accuracy-Highest: 0.97800
+call reset()
+lr-batch-epoch: 1e-05 537 7
+testing verification..
+(12000, 256)
+infer time 11.309584
+[calfw][22000]XNorm: 15.651087
+[calfw][22000]Accuracy-Flip: 0.87250+-0.00987
+testing verification..
+(14000, 256)
+infer time 12.858328
+[cfp_fp][22000]XNorm: 17.015458
+[cfp_fp][22000]Accuracy-Flip: 0.87757+-0.01032
+testing verification..
+(12000, 256)
+infer time 10.920339
+[agedb_30][22000]XNorm: 17.363181
+[agedb_30][22000]Accuracy-Flip: 0.84300+-0.02794
+testing verification..
+(14000, 256)
+infer time 12.832393
+[cfp_ff][22000]XNorm: 15.583266
+[cfp_ff][22000]Accuracy-Flip: 0.97043+-0.00990
+testing verification..
+(12000, 256)
+infer time 10.915929
+[cplfw][22000]XNorm: 16.875934
+[cplfw][22000]Accuracy-Flip: 0.81017+-0.01776
+testing verification..
+(12000, 256)
+infer time 10.886523
+[lfw][22000]XNorm: 15.591766
+[lfw][22000]Accuracy-Flip: 0.97183+-0.00603
+[22000]Accuracy-Highest: 0.97800
+lr-batch-epoch: 1e-05 1537 7
+testing verification..
+(12000, 256)
+infer time 11.297378
+[calfw][23000]XNorm: 16.128715
+[calfw][23000]Accuracy-Flip: 0.87933+-0.00929
+testing verification..
+(14000, 256)
+infer time 12.894608
+[cfp_fp][23000]XNorm: 17.322471
+[cfp_fp][23000]Accuracy-Flip: 0.88800+-0.01233
+testing verification..
+(12000, 256)
+infer time 10.925048
+[agedb_30][23000]XNorm: 17.632490
+[agedb_30][23000]Accuracy-Flip: 0.85083+-0.02498
+testing verification..
+(14000, 256)
+infer time 12.805707
+[cfp_ff][23000]XNorm: 16.303459
+[cfp_ff][23000]Accuracy-Flip: 0.97329+-0.00557
+testing verification..
+(12000, 256)
+infer time 10.895734
+[cplfw][23000]XNorm: 16.968766
+[cplfw][23000]Accuracy-Flip: 0.82033+-0.01853
+testing verification..
+(12000, 256)
+infer time 10.892746
+[lfw][23000]XNorm: 15.981087
+[lfw][23000]Accuracy-Flip: 0.98050+-0.00489
+[23000]Accuracy-Highest: 0.98050
+lr-batch-epoch: 1e-05 2537 7
+testing verification..
+(12000, 256)
+infer time 11.191727
+[calfw][24000]XNorm: 16.020606
+[calfw][24000]Accuracy-Flip: 0.87417+-0.01395
+testing verification..
+(14000, 256)
+infer time 12.963228
+[cfp_fp][24000]XNorm: 17.058088
+[cfp_fp][24000]Accuracy-Flip: 0.88400+-0.01603
+testing verification..
+(12000, 256)
+infer time 11.039316
+[agedb_30][24000]XNorm: 17.315953
+[agedb_30][24000]Accuracy-Flip: 0.8550INFO:root:Epoch[7] Batch [2500-2600]	Speed: 140.41 samples/sec	acc=0.900000	lossvalue=0.737100
+INFO:root:Epoch[7] Batch [2600-2700]	Speed: 504.85 samples/sec	acc=0.901188	lossvalue=0.712867
+INFO:root:Epoch[7] Batch [2700-2800]	Speed: 502.01 samples/sec	acc=0.898250	lossvalue=0.747626
+0+-0.02638
+testing verification..
+(14000, 256)
+infer time 12.864519
+[cfp_ff][24000]XNorm: 16.258813
+[cfp_ff][24000]Accuracy-Flip: 0.97429+-0.00546
+testing verification..
+(12000, 256)
+infer time 10.840716
+[cplfw][24000]XNorm: 16.582708
+[cplfw][24000]Accuracy-Flip: 0.81233+-0.02294
+testing verification..
+(12000, 256)
+infer time 10.842597
+[lfw][24000]XNorm: 15.713095
+[lfw][24000]Accuracy-Flip: 0.97867+-0.00591
+[24000]Accuracy-Highest: 0.98050
+Traceback (most recent call last):
+  File "train.py", line 379, in <module>
+    main()
+  File "train.py", line 376, in main
+    train_net(args)
+  File "train.py", line 371, in train_net
+    epoch_end_callback = epoch_cb )
+  File "/usr/local/lib/python2.7/dist-packages/mxnet/module/base_module.py", line 539, in fit
+    self.update_metric(eval_metric, data_batch.label)
+  File "/usr/local/lib/python2.7/dist-packages/mxnet/module/module.py", line 775, in update_metric
+    self._exec_group.update_metric(eval_metric, labels, pre_sliced)
+  File "/usr/local/lib/python2.7/dist-packages/mxnet/module/executor_group.py", line 639, in update_metric
+    eval_metric.update_dict(labels_, preds)
+  File "/usr/local/lib/python2.7/dist-packages/mxnet/metric.py", line 304, in update_dict
+    metric.update_dict(labels, preds)
+  File "/usr/local/lib/python2.7/dist-packages/mxnet/metric.py", line 132, in update_dict
+    self.update(label, pred)
+  File "/home/javad/insightface/recognition/metric.py", line 20, in update
+    pred_label = pred_label.asnumpy().astype('int32').flatten()
+  File "/usr/local/lib/python2.7/dist-packages/mxnet/ndarray/ndarray.py", line 1980, in asnumpy
+    ctypes.c_size_t(data.size)))
+KeyboardInterrupt
